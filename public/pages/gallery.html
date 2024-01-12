@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.png" alt="" />
+      <nav>
+        <a href="/">Home</a>
+        <a href="/pages/work.html">Work</a>
+        <a href="/pages/gallery.html">Gallery</a>
+        <a href="/pages/about.html">About</a>
+      </nav>
+    </header>
+    <main class="galleryPage">
+      <div class="title">
+        <h3>What works does he have?</h3>
+        <h2>GALLERY</h2>
+      </div>
+      <div id="gallery">hier sind die songs gallery</div>
+    </main>
+    <footer>© 2024 Runhong</footer>
+
+    <script>
+      fetch("/api/works")
+        .then((res) => res.json())
+        .then((data) => renderGallery(data));
+
+      const renderGallery = (works) => {
+        const workList = document.createElement("section");
+        for (let i = 0; i < works.length; i++) {
+          const workItem = document.createElement("div");
+          const name = document.createElement("h4");
+          const year = document.createElement("p");
+          const album = document.createElement("p");
+          const imageDiv = document.createElement("div");
+          const image = document.createElement("img");
+          const video = document.createElement("video");
+          const sourceVideo = document.createElement("source");
+          name.innerHTML = `${works[i].name}`;
+          year.innerHTML = `${works[i].year}`;
+          album.innerHTML = `${works[i].album}`;
+          image.setAttribute("src", `${works[i].image}`);
+          imageDiv.appendChild(image);
+          imageDiv.className = "image";
+          sourceVideo.type = "video/MP4";
+          sourceVideo.src = `${works[i].url}`;
+          video.appendChild(sourceVideo);
+          workItem.append(name, year, album, imageDiv, video);
+          workList.append(workItem);
+        }
+        const gallery = document.getElementById("gallery");
+        gallery.append(workList);
+      };
+    </script>
+  </body>
+</html>

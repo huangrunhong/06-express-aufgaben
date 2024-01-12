@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Ten Years",
+    "year": 2003,
+    "album": "Admit it",
+    "image": "/images/tenyears.jpeg",
+    "url": "https://www.youtube.com/watch?v=BqbvK2I_Baw"
+  },
+  {
+    "name": "Fu Shi Shan Xia",
+    "year": 2006,
+    "album": "What's Going On...?",
+    "image": "/images/Whats-Going-On.jpeg",
+    "url": "https://www.youtube.com/watch?v=9-9jGV_Uq6Q"
+  },
+  {
+    "name": "Love Transfer",
+    "year": 2007,
+    "album": "Admit it",
+    "image": "/images/admit-it.jpeg",
+    "url": "https://www.youtube.com/watch?v=jouvNcQOm7Q"
+  },
+  {
+    "name": "Today Next Year",
+    "year": 2002,
+    "album": "The Line-Up",
+    "image": "/images/the-line-up.jpeg",
+    "url": "https://www.youtube.com/watch?v=rpBo8dFGXYo"
+  },
+  {
+    "name": "Fu Kua",
+    "year": 2005,
+    "album": "U87",
+    "image": "/images/U87.jpeg",
+    "url": "https://www.youtube.com/watch?v=QHUNwcYPOWM"
+  },
+
+  {
+    "name": "Long Time No See",
+    "year": 2007,
+    "album": "Admit it",
+    "image": "/images/admit-it.jpeg",
+    "url": "https://www.youtube.com/watch?v=fKCUBnbials"
+  },
+  {
+    "name": "King of Karaoke",
+    "year": 2000,
+    "album": "Some Like it Hot",
+    "image": "/images/some-like-it-hot.jpeg",
+    "url": "https://www.youtube.com/watch?v=PZfpPP6np6I"
+  },
+  {
+    "name": "Red Roses",
+    "year": 2007,
+    "album": "Admit it",
+    "image": "/images/admit-it.jpeg",
+    "url": "https://www.youtube.com/watch?v=fx4w4NB6P3c"
+  },
+  {
+    "name": "Sha Long",
+    "year": 2009,
+    "album": "H3M",
+    "image": "/images/H3M.jpeg",
+    "url": "https://www.youtube.com/watch?v=fo4zyjWTaUc"
+  }
+]

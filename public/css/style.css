@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: cornflowerblue;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover,
+a:active {
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 2%;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+  margin-right: 20%;
+}
+.info img {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: end;
+}
+li {
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.homePage main {
+  height: 90vh;
+  background-image: url("/images/eason.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.workPage > div:nth-of-type(2) {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.workPage > div:nth-of-type(2) > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.workPage > div:nth-of-type(2) img {
+  width: 100%;
+}
+
+.galleryPage section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.galleryPage section .image {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.galleryPage section img {
+  width: 300px;
+  min-height: 300px;
+}
+
+.galleryPage section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.galleryPage section h4 {
+  font-size: 1.5rem;
+}
+.galleryPage section p {
+  font-size: 1rem;
+}
